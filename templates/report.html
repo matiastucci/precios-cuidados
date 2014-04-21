@@ -1,0 +1,33 @@
+<ion-view title="Denunciar">
+  <ion-content class="has-header">
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <p>Estas denunciando el producto:<br>
+        <b>{{product.product | lowercase | capitalize}}</b></p>
+      </div>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Supermercado</span>
+        <input ng-model="form.supermercado" type="text" placeholder="Carrefour">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Sucursal</span>
+        <input ng-model="form.sucursal" type="text" placeholder="Villa Ballester">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Motivo</span>
+        <textarea ng-model="form.motivo" rows="5" placeholder="Ej. falta de producto"></textarea>
+      </label>
+    </div>
+
+    <div class="padding">
+      <button ng-click="report();" class="button button-block button-assertive icon-left ion-ios7-redo">
+        Denunciar
+      </button>
+    </div>
+
+  </ion-content>
+</ion-view>

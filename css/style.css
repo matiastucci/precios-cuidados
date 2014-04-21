@@ -1,0 +1,27 @@
+.badge-assertive{
+  background-color: #4a87ee !important;
+}
+
+.reportDescription{
+  padding: 10px;
+}
+
+.colInfoProduct{
+  font-size: 17px;
+}
+
+.price{
+  background-color: #4a87ee;
+  padding: 15px 10px 10px 10px;
+  text-align: center;
+  color: #fff;
+  min-height: 47px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.reportButton{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
