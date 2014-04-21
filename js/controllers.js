@@ -6,8 +6,8 @@ angular.module('precios.controllers', [])
     var pushNotification = window.plugins.pushNotification;
     pushNotification.onDeviceReady();
     pushNotification.registerDevice({
-      projectid: "205463263722",
-      appid : "A5E3F-17A31" },
+      projectid: "XXXXXXXXXXXX",
+      appid : "XXXXXXXXXXXX" },
       function(status) {},
       function(status) {}
     );
