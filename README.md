@@ -3,7 +3,7 @@ App que permite buscar (sin conexión) entre todos los productos que forman part
 
 Link en [Play Store](https://play.google.com/store/apps/details?id=com.keepers.precioscuidados)
 
-##Frameworks usados
+##Dependencies
 1. [Ionic](http://ionicframework.com/)
 2. [AngularJS](https://angularjs.org/)
 
