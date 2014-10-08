@@ -1,24 +1,6 @@
 angular.module('precios.controllers', [])
 
 .controller('CategoriesCtrl', function($scope,$ionicViewService,Categories){
-
-  var initPushwoosh = function(){
-    var pushNotification = window.plugins.pushNotification;
-    pushNotification.onDeviceReady();
-    pushNotification.registerDevice({
-      projectid: "XXXXXXXXXXXX",
-      appid : "XXXXXXXXXXXX" },
-      function(status) {},
-      function(status) {}
-    );
-  };
-
-  ionic.Platform.ready(function(){
-    if(ionic.Platform.isAndroid()){
-      document.addEventListener("deviceready", initPushwoosh, true);
-    }
-  });
-
   $scope.categories = Categories.all();
 })
 
@@ -28,6 +10,12 @@ angular.module('precios.controllers', [])
   $scope.category = Categories.get(categoryId);
   var allProducts = Products.all();
   $scope.products = Products.getObjects(allProducts,"category",categoryId);
+
+  $scope.getItemHeight = function(item, index) {
+    //Make evenly indexed items be 10px taller, for the sake of example
+    return 50;
+  };
+
 })
 
 .controller('ProductCtrl', function($scope,$stateParams,Categories,Products){
